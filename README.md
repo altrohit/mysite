@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Personal Website
+
+A modern, responsive personal website built with Next.js, featuring an interactive CV, blog system, and contact form.
+
+## Features
+
+- **Interactive CV**: Collapsible sections with animations and PDF download option
+- **Blog System**: Markdown-based blog with categories and search functionality
+- **Contact Form**: Simple and elegant contact form
+- **Dark Mode**: System-aware theme with manual toggle option
+- **Responsive Design**: Mobile-first approach for all screen sizes
 
 ## Getting Started
 
-First, run the development server:
-
+1. Install dependencies:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Run the development server:
+```bash
+npm run dev
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Customization
 
-## Learn More
+### Updating Your Information
 
-To learn more about Next.js, take a look at the following resources:
+1. **Personal Details**: Edit `src/app/page.tsx` to update your name and introduction
+2. **CV Content**: Modify `src/app/cv/page.tsx` to update your professional information
+3. **Blog Posts**: Add new blog posts in the `src/content/blog` directory using Markdown format
+4. **Contact Information**: Update social media links in `src/app/contact/page.tsx`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Styling
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Theme colors and styles can be modified in `src/app/globals.css`
+- Component-specific styles are managed through Tailwind classes
 
-## Deploy on Vercel
+## Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### GitHub Pages Setup
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Create a GitHub repository for your website
+2. Update the repository settings to enable GitHub Pages
+3. Configure your custom domain (optional)
+
+```bash
+# Build the project
+npm run build
+
+# Deploy to GitHub Pages
+npm run deploy
+```
+
+## Technologies Used
+
+- [Next.js](https://nextjs.org/) - React framework
+- [Tailwind CSS](https://tailwindcss.com/) - Styling
+- [Framer Motion](https://www.framer.com/motion/) - Animations
+- [MDX](https://mdxjs.com/) - Blog content management
+
+## Future Enhancements
+
+- Automated GitHub projects integration
+- LinkedIn profile sync
+- Analytics integration
+- RSS feed for blog posts
+
+## License
+
+MIT
