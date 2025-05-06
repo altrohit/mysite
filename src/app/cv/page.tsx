@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import { ul } from 'framer-motion/client';
 
 interface Author {
   name: string;
@@ -254,6 +255,7 @@ export default function CV() {
         <div className="certifications-list">
           <p>DeepLearning.AI Certifications:</p>
           <ul>
+            <li>Deep Learning Specialization</li>
             <li>Convolutional Neural Networks</li>
             <li>Neural Networks and Deep Learning</li>
             <li>Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization</li>
